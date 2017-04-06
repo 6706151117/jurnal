@@ -10,11 +10,15 @@ public class nomor1{
 		int fib1=awal;
 		int fib2=awal;
 		int fibFinal = awal;
+		long arrFibFinal[] = new long[n];
 		for(int i=3; i<=n; i++){
 			fibFinal = fib1+fib2;
 			fib1=fib2;
 			fib2=fibFinal;
-			System.out.print(fibFinal+" ");
+			arrFibFinal[i-3]=fibFinal;
+		}
+		for(int i=arrFibFinal.length; i>=0; i--){
+			System.out.print(arrFibFinal[i]+" ");
 		}
 		
 	}
