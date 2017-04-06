@@ -10,12 +10,14 @@ public class nomor1{
 		int fib1=awal;
 		int fib2=awal;
 		int fibFinal = awal;
+		int fibTotal=0;
 		for(int i=3; i<=n; i++){
 			fibFinal = fib1+fib2;
 			fib1=fib2;
 			fib2=fibFinal;
-			System.out.print(fibFinal+" ");
+			fibTotal = fibTotal+fibFinal;
+			//System.out.print(fibFinal+" ");
 		}
-		
+		System.out.print(fibTotal);
 	}
 }
